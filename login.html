@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>EduFy | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    
+    <style>
+        
+        .nav-links ul li a{
+            color: #111;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .login{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #login-box {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        #login-form {
+            text-align: center;
+        }
+
+        #login-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #login-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section class="lo-header">
+        <nav>
+            <a href="index.html"><img src="img/logo1y.png"></a><!--logo-->
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="">LOGIN/SIGN UP</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </section>
+    <section class="login">
+    <div id="login-box">
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter Username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter Password">
+
+            <button type="button" id="redirectButton" onclick="login()">Login</button>
+            <br>
+            <br>
+            <a href="#" style="color:black;">Forget Password?</a>
+        </form>
+        <br>
+        <a href="#" style="color:black;">Sign Up</a>
+    </div>
+    </section>
+    <footer>
+        <div class="fo-container">
+            <div class="fo-social">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="fo-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>   
+                </ul>
+            </div>
+            <div class="fo-bottom">
+            <p>Copyright &copy;2023 EduFy | <span class="rights">All Rights Reserved</span></p>
+        </div>
+        </div>
+        
+    </footer>
+
+    <script >
+        // Handle login logic
+        function redirectToDestination() {
+    
+    var destinationURL = "course.html";
+
+    
+    window.location.href = destinationURL;
+}
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+           if(username=="abcdef" && password=="12341234"){ 
+             document.getElementById("redirectButton").addEventListener("click", redirectToDestination);
+            }
+           else{
+               alert('Wrong Username and Password')
+           }
+        
+        }
+    </script>
+</body>
+</html>

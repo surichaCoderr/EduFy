@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>EdyFy | Courses</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+        <style>
+            .btn-cour{
+    display: inline-block;
+    
+    color:white;
+    background-color: #376777;
+    padding: 12px 34px;
+    font-size: 18px;
+    
+    position: relative;
+    cursor: pointer;
+}
+
+        </style>
+    </head>
+    <body>
+        <section class="co-header">
+            <nav>
+                <a href="index.html"><img src="img/logo1y.png"></a><!--logo-->
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="login.html">LOGIN/SIGN UP</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>Our Courses</h1>
+        </section>
+        <br>
+        <div id="filters" style="text-align: center;">
+            <button onclick="filterCourses('all')" class="btn-cour">All Categories</button>
+            <button onclick="filterCourses('business')" class="btn-cour">Business and Career</button>
+            <button onclick="filterCourses('arts')" class="btn-cour">Creative Arts</button>
+            <button onclick="filterCourses('technology')" class="btn-cour">Technology and IT</button>
+            <button onclick="filterCourses('development')" class="btn-cour">Personal Development</button>
+            
+            <button onclick="filterCourses('development')" class="btn-cour">Language and Communication</button>
+            <button onclick="filterCourses('development')" class="btn-cour">Science and Health</button>
+
+          </div>
+        <div class="courses">
+            <div class="row">
+                <div class="co-col">
+                    <h3>Technology and IT</h3>
+                    <p>Providing expertise in digital fields, covering topics like web 
+                        development, cybersecurity, data science and more to prepare individuals
+                         for thriving careers in the tech industry.<br>
+                        <br>
+                        <a href="" >&gt;&gt; Web Development Bootcamp</a><br>
+                        <a href="" >&gt;&gt; Mobile App Development</a><br>
+                        <a href="" >&gt;&gt; Cybersecurity Fundamentals</a><br>
+                        <a href="" >&gt;&gt; Data Science and Machine Learning</a><br>
+                        <a href="" >&gt;&gt; Cloud Computing Essentials</a><br>
+                        <a href="" >&gt;&gt; Internet of Things (IoT) Fundamentals</a><br>
+                    </p>
+                    
+                </div>
+                <div class="co-col" id="course-item" data-category="business">
+                    <h3>Business and Career</h3>
+                    <p>Practical skills and knowledge to boost your
+                         professional success and advancement in just a short time.<br>
+                         <br>
+                         <a href="" >&gt;&gt; Business Strategy Mastery</a><br>
+                         <a href="" >&gt;&gt; Digital Marketing Fundamentals</a><br>
+                         <a href="" >&gt;&gt; Leadership and Management Excellence</a><br>
+                         <a href="" >&gt;&gt; Financial Planning and Wealth Management</a><br>
+                         <a href="" >&gt;&gt; Entrepreneurship Essentials</a><br>
+                         <a href="" >&gt;&gt; Effective Communication in the Workplace</a><br>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="co-col">
+                    <h3>Language and Communication</h3>
+                    <p>Enhancing your verbal and written skills, fostering effective interaction
+                         and clear expression in various contexts.<br>
+                         <br>
+                         <a href="" >&gt;&gt; Learn a New Language (e.g., Spanish, French, Mandarin)</a><br>
+                         <a href="" >&gt;&gt; Effective Business Writing</a><br>
+                         <a href="" >&gt;&gt; Public Speaking and Communication Mastery</a><br>
+                         <a href="" >&gt;&gt; Sign Language Basics</a><br>
+                         <a href="" >&gt;&gt; Creative Storytelling Techniques</a><br>
+                         <a href="" >&gt;&gt; Advanced Grammar and Writing Skills</a><br>
+                    </p>
+                </div>
+                <div class="co-col">
+                    <h3>Creative Arts and Hobbies</h3>
+                    <p>Providing a creative outlet and leisure learning, offering 
+                        skills in arts, crafts and other enjoyable pursuits. These 
+                        courses are perfect for cultivating talents and personal interests.<br>
+                        <br>
+                        <a href="" >&gt;&gt; Photography for Beginners</a><br>
+                        <a href="" >&gt;&gt; Art of Creative Writing</a><br>
+                        <a href="" >&gt;&gt; Graphic Design Essentials</a><br>
+                        <a href="" >&gt;&gt; Cooking and Culinary Arts</a><br>
+                        <a href="" >&gt;&gt; Music Composition and Production</a><br>
+                        <a href="" >&gt;&gt; Interior Design Principles</a><br>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="co-col">
+                    <h3>Personal Development and Wellness</h3>
+                    <p>Empowering individuals to enhance their well-being, emotional resilience 
+                        and life satisfaction, fostering personal growth and positive life changes.<br>
+                        <br>
+                        <a href="" >&gt;&gt; Mindfulness and Stress Management</a><br>
+                        <a href="" >&gt;&gt; Personal Finance and Budgeting</a><br>
+                        <a href="" >&gt;&gt; Personal Finance and Budgeting</a><br>
+                        <a href="" >&gt;&gt; Time Management and Productivity</a><br>
+                        <a href="" >&gt;&gt; Yoga and Meditation for Beginners</a><br>
+                        <a href="" >&gt;&gt; Self-Confidence and Self-Esteem Building</a><br>
+                    </p>
+                </div>
+                <div class="co-col">
+                    <h3>Science and Health</h3>
+                    <p>Explore the wonders of the universe and dive into the fascinating world of science 
+                        with our courses. Uncover the mysteries of nature from astronomy to biology and expand your knowledge.<br>
+                        <br>
+                        <a href="" >&gt;&gt; Introduction to Psychology</a><br>
+                        <a href="" >&gt;&gt; Environmental Science and Sustainability</a><br>
+                        <a href="" >&gt;&gt; Anatomy and Physiology Essentials</a><br>
+                        <a href="" >&gt;&gt; Nutrition and Dietetics</a><br>
+                        <a href="" >&gt;&gt; Astronomy and Space Exploration</a><br>
+                        <a href="" >&gt;&gt; Fitness and Exercise Science</a><br>
+                    </p>
+                        
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="fo-container">
+                <div class="fo-social">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="fo-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>   
+                    </ul>
+                </div>
+                <div class="fo-bottom">
+                <p>Copyright &copy;2023 EduFy | <span class="rights">All Rights Reserved</span></p>
+            </div>
+            </div>
+            
+        </footer>
+ <script>
+    function filterCourses(category) {
+  var courses = document.getElementsByClassName("#course-item");
+
+  for (var i = 0; i < courses.length; i++) {
+    var course = courses[i];
+    var courseCategory = course.getAttribute("data-category");
+
+    if (category === "all" || category === courseCategory) {
+      course.style.display = "block";
+    } else {
+      course.style.display = "none";
+    }
+  }
+}
+
+    </script>
+        
+    </body>
+</html>
