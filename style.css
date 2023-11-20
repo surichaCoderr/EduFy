@@ -5,7 +5,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/banner.png);/*background*/
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner.png);/*background*/
     background-position: center;
     background-size: cover;
     position: relative;
@@ -212,7 +212,7 @@ h3{
 .ab-header{
     height: 70vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg) ;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(background.jpg) ;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -255,7 +255,7 @@ h3{
 .co-header{
     height: 80vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/libr.webp) ;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(libr.webp) ;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -305,7 +305,7 @@ h3{
 .con-header{
     height: 70vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/cont1.webp) ;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(cont1.webp) ;
     background-position: center;
     background-size: cover;
     text-align: center;
